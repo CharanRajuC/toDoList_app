@@ -1,0 +1,14 @@
+<div class="todoHeader">
+    <h2>{{listName()}}<img src="\images\icon.png"/></h2>
+    <div class="InsertlistItem">
+       <form [formGroup]="toDoForm" (ngSubmit)="addTask()"  spellcheck="false" autocomplete="off">
+        <input type="text" id="taskDescription" formControlName="taskDescription">
+        <button>Add</button>
+       </form>
+    </div>      
+    <ul class="list-items">
+        @for (task of tasks(); track $index; let id = $index) {
+           <li ><app-list-item [id]="id" [taskContent]="task.taskDescription" [checked]="task.taskStatus" (deleteTask)="deleteTask($event)" (toggleStatus)="toggleTaskStatus($event)"></app-list-item></li> 
+        }
+    </ul>
+</div>

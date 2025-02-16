@@ -1,0 +1,5 @@
+<div>
+    <p (click)="toggleStatus.emit(id())" [ngClass]="{'checked': checked()}">{{taskContent()}}</p>
+    <img src="images/deleteIcon.png" (click)="deleteTask.emit(id())">
+    
+</div>

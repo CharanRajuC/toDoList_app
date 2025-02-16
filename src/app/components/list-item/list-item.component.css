@@ -1,0 +1,35 @@
+div{
+    align-items: center;
+    display: flex;
+}
+p{
+    position: relative;
+    width: 70%;
+    padding-left: 10px;
+}
+p::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url("../../../../public/images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: -4px;
+    left: -40px;
+}
+p.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+p.checked::before{
+    background-image: url("../../../../public/images/checked.png");
+}
+img{
+    width: 20px;
+    transition: width 0.3s ease;
+}
+img:hover{
+    width: 25px;
+}

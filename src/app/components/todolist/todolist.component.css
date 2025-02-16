@@ -1,0 +1,65 @@
+.todoHeader{
+
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+.todoHeader h2{
+
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todoHeader h2 img{
+   width: 30px;
+   margin-left: 10px;
+}
+.InsertlistItem{
+    background: #edeff0;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+.InsertlistItem form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.InsertlistItem form input{
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: 15px;
+    width: 75%;
+    font-size: 17px;
+}
+.InsertlistItem form button{
+    outline: none;
+    border: none;
+    background: #ff5945;
+    padding: 15px 40px;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 55px;
+    user-select: none;
+    cursor: pointer;
+    min-height: 4vh;
+}
+ul li:hover{
+    opacity: 0.9;
+    min-height: 4.5vh;
+    font-size: 18px;
+}
